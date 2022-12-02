@@ -301,6 +301,7 @@ func RandomSleep(n int) {
 // ------------------------------------------------------------------------------------------------------------------------------------------
 // Q: Can you be sure that all strings are printed before the program stops?
 // A: Idk programming is like a box of chocolates, you never know what you're going to get by the time you hit run. 
+// The producers sychronize constantly while they get data therefore it may happen that wg.Done() blocks the consumer before being done. 
 
 func main() {
 	// Use different random numbers each time this program is executed.
